@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="main.css" rel="stylesheet"/>
+</head>
+<body>
+<div th:replace="~{header :: headerFragment}"></div>
+<div class="container-fluid row m-2">
+    <div class="col-1"></div>
+    <div class="col-8">
+        <div class="row mt-5">
+            <div class="col">
+                <select class="form-select">
+                    <option value="저자">저자</option>
+                    <option value="작성자">작성자</option>
+                    <option value="책 제목">책 제목</option>
+                    <option value="제목">제목</option>
+                </select>
+            </div>
+            <div class="col-8">
+                <input class="form-control" id="inputDefault" placeholder="검색어를 입력하세요" type="text">
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" type="button">검색</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;">
+                        <img alt="img" class="card-img-top" src="/img/book.png"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Review title</h5>
+                            <p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                                "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Book title</li>
+                            <li class="list-group-item">Book Author</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;">
+                        <img alt="img" class="card-img-top" src="/img/book.png"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Review title</h5>
+                            <p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                                "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Book title</li>
+                            <li class="list-group-item">Book Author</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;">
+                        <img alt="img" class="card-img-top" src="/img/book.png"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Review title</h5>
+                            <p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                                "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Book title</li>
+                            <li class="list-group-item">Book Author</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;">
+                        <img alt="img" class="card-img-top" src="/img/book.png"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Review title</h5>
+                            <p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                                "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Book title</li>
+                            <li class="list-group-item">Book Author</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-2 flex-column mt-5" id="side-content">
+        <h6 class="text-center mt-3">Recent Review</h6>
+        <div>
+            <ul class="list-group align-content-center">
+                <li class="list-group-item d-flex justify-content-between align-items-center">1번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">2번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">3번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">4번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">5번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+            </ul>
+        </div>
+        <h6 class="text-center mt-3">Recent Comment Review</h6>
+        <div>
+            <ul class="list-group align-content-center">
+                <li class="list-group-item d-flex justify-content-between align-items-center">1번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">2번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">3번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">4번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">5번
+                    <span class="badge bg-primary rounded-pill">N</span></li>
+            </ul>
+        </div>
+        <h6 class="text-center mt-3">Link</h6>
+        <ul class="list-group align-content-center">
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a
+                    href="https://book.interpark.com/bookPark/" target="_blank">인터파크</a></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a
+                    href="https://www.aladin.co.kr/" target="_blank">알라딘</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

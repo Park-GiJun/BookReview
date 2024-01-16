@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="main.css" rel="stylesheet"/>
+    <style>
+        .custom-color-bg {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="~{header :: headerFragment}"></div>
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="row">
+        <div class="col-md-12 custom-color-bg">
+            <form th:action="@{/login}" th:method="POST" class="mb-3">
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <label>
+                            <input type="text" class="form-control mb-2 form-control-lg" placeholder="Enter ID">
+                            <input type="password" class="form-control form-control-lg" placeholder="Enter Password">
+                        </label>
+                    </div>
+                    <div>
+                        <a class="text-primary text-end float-start" href="/register">Register</a>
+                        <button type="submit" class="btn btn-primary float-end">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
