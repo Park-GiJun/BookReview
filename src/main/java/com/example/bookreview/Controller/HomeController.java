@@ -10,6 +10,7 @@ public class HomeController {
 	private final String LOGIN_VIEW = "/Login/Login";
 	private final String REGISTER_PAGE = "/Login/Register";
 	private final String REVIEW_PAGE = "/Review/ReviewMain";
+	private final String REVIEW_DETAIL_PAGE = "/Review/ReviewDetail";
 
 	@GetMapping("/")
 	public String goHome () {
@@ -29,5 +30,10 @@ public class HomeController {
 	@GetMapping("/review")
 	public String goReview(){
 		return REVIEW_PAGE;
+	}
+
+	@GetMapping("/review/detail")
+	public String goReviewDetail(){
+		return REVIEW_DETAIL_PAGE;
 	}
 }

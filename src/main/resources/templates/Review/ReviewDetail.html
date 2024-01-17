@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ReviewMain</title>
+    <link href="main.css" media="all" rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
+    <style>
+        .custom-color-bg {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+<div th:replace="~{header :: headerFragment}"></div>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10 custom-color-bg mt-5">
+        <table class="table mt-3">
+            <tr>
+                <td rowspan="2" style="width: 5rem"><img alt="img" class="card-img-top" src="/img/book.png"/></td>
+                <td>Title</td>
+                <td>Writer</td>
+                <td>Visit</td>
+                <td><span class="badge bg-success">Good</span></td>
+                <td><span class="badge bg-danger">Bad</span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>BookTitle</td>
+                <td>Author</td>
+                <td>Translators</td>
+                <td>Publisher</td>
+                <td>Price</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td colspan="7"><p>eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it
+                    is pain..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it
+                    is pain..."
+                    eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it
+                    is pain..."
+                    eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it
+                    is pain..."</p>
+                    <div class="float-end">
+                        <button type="button">Edit</button>
+                        <button type="button">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-secondary" colspan="7">Comment Writer</td>
+            </tr>
+            <tr>
+                <td colspan="7"><p>eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit..."
+                </p></td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+</body>
+</html>
